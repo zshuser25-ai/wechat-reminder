@@ -1,7 +1,7 @@
 {
   "daily": {
     "enabled": true,
-    "message": "每日签到",
+    "message": "1.华住会每日签到 2.电信微信号抽奖",
     "hour": 9,
     "minute": 0
   },

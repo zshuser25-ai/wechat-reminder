@@ -1,0 +1,18 @@
+# 密钥文件
+.env
+
+# 日志
+logs/*.log
+logs/*.log.*
+!logs/.gitkeep
+
+# Python
+__pycache__/
+*.pyc
+
+# 临时文件
+/tmp/wx_reminder_token.json
+
+# IDE
+.vscode/
+.idea/

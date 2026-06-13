@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(claude --version)",
+      "Bash(cat ~/.claude/settings.json 2>/dev/null || echo \"No settings.json found\")",
+      "Read(//home/zshus/.claude/**)"
+    ]
+  }
+}

@@ -1,17 +1,15 @@
 name: WeChat Reminder
 
 on:
-  schedule:
-    # 每天北京时间 9:00 (UTC+8 → UTC = 1:00)
-    - cron: '0 1 * * *'
   workflow_dispatch:
+  schedule:
+    - cron: '0 1 * * *'
 
 jobs:
   send:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
       - name: Send WeChat reminders
         run: python3 scripts/send.py --all
         env:
